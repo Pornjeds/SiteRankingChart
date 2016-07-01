@@ -90,7 +90,7 @@ function drawBasic() {
           title: 'Date'
         },
         vAxis: {
-          title: 'Rank'
+          title: 'Alexa Ranking'
         },
         animation: {
           startup: true,
