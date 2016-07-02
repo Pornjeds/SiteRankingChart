@@ -7,12 +7,83 @@
   <meta name="keywords" content="Japan Discovery, Alexa, Ranking">
   <meta name="author" content="Pornjed Sakgitjarung">
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="./scripts/jquery.min.js"></script>
   <script type="text/javascript" src="./scripts/chart.js"></script>
-</head>
-<body>
-  <h1>Japan Discovery Alexa Site Ranking</h1>
-  <div id="chart_div"></div>
+  <script type="text/javascript" src="./scripts/script.js"></script>
 
-  <a href="http://www.japan-tour.jp" target="_blank">Go to site</a>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="./stylesheets/justified-nav.css">
+</head>
+
+<body>
+  <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h1 class="text-muted">Japan Discovery Alexa Site Ranking</h1>
+        <nav>
+          <ul class="nav nav-justified">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="http://www.japan-tour.jp" target="_blank">Japan Discovery</a></li>
+            <li><a href="https://www.google.com/webmasters/tools/" target="_blank">Google Webmaster Tools</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h2>Today Ranking</h2>
+        <div id="today_rank" style="text-align:center; font-size: XX-large;">
+          <img src="./img/ajax_loader.gif">
+        </div>
+        <div id="chart_div"></div>
+        <p class="lead">This chart represent site daily ranking of <a href="http://www.japan-tour.jp">Japan Discovery</a> measured by Alexa.</p>
+        <p><a class="btn btn-lg btn-success" href="http://www.japan-tour.jp" target="_blank" role="button">Go to site</a></p>
+      </div>
+
+      <!-- Index and Utilities Section -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Google PageSpeed Insights</h2>
+          <p>PageSpeed tools analyze and optimize the website by follow the web best practice.</p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Similar Web Analytic</h2>
+          <p>Compare website traffic with SimilarWeb.com's advanced traffic estimator tool. See any website's traffic sources &amp; uncover their online marketing strategies.</p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Moz: Open Site Explorer</h2>
+          <p>Identify link building opportunities. Research backlinks, identify top pages, view social activity, and analyze anchor text.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <p><a class="btn btn-primary" href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.japan-tour.jp" target="_blank" role="button">Run Test &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <p><a class="btn btn-primary" href="https://www.similarweb.com/website/japan-tour.jp" target="_blank" role="button">Run Test &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <p><a class="btn btn-primary" href="https://moz.com/researchtools/ose/links?site=http%3A%2F%2Fwww.japan-tour.jp&filter=&source=external&target=page&group=0&page=1&sort=page_authority&anchor_id=&anchor_type=&anchor_text=&from_site=" target="_blank" role="button">Run Test &raquo;</a></p>
+        </div>
+      </div>
+      <!-- End Index and Utilities Section -->
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; 2016 Company, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
 </body>
 </html>
