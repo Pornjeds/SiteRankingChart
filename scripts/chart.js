@@ -1,7 +1,7 @@
 google.charts.load('current', {packages: ['corechart', 'line']});
 google.charts.setOnLoadCallback(drawBasic);
 
-var todayRank = 736014;
+var todayRank = 735398;
 
 function drawBasic() {
 
