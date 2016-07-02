@@ -85,7 +85,8 @@ function drawBasic() {
           [new Date(2016,5,29), 743715],
           [new Date(2016,5,30), 743715],
           [new Date(2016,6,1), 743997],
-          [new Date(2016,6,2), 736014]
+          [new Date(2016,6,2), 736014],
+          [new Date(2016,6,3), 735398]
         ]);
 
       var options = {
