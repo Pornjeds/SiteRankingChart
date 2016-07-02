@@ -25,8 +25,12 @@ var sv_cnt = ar_server2.length;
 var eurl = encodeURIComponent(url);
 
 var sv_alexa = ar_server2[Math.floor(Math.random()*sv_cnt)];
-$.ajax({
-	dataType: "jsonp",
-	url: sv_alexa + "get-pralexa.php?m=alexa&url=" + eurl,
-	success: function(data) { $("#today_rank").html('<a href="http://www.alexa.com/siteinfo/' + url + '" target="_blank">' + data.val + '</a>'); }
+// $.ajax({
+// 	dataType: "jsonp",
+// 	url: sv_alexa + "get-pralexa.php?m=alexa&url=" + eurl,
+// 	success: function(data) { $("#today_rank").html('<a href="http://www.alexa.com/siteinfo/' + url + '" target="_blank">' + data.val + '</a>'); }
+// });
+
+$(document).ready(function(){
+	$("#today_rank").html('<a href="http://www.alexa.com/siteinfo/' + url + '" target="_blank">' + todayRank + '</a>');
 });

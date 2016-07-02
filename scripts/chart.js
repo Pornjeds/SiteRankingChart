@@ -1,6 +1,8 @@
 google.charts.load('current', {packages: ['corechart', 'line']});
 google.charts.setOnLoadCallback(drawBasic);
 
+var todayRank = 736014;
+
 function drawBasic() {
 
       var data = new google.visualization.DataTable();
